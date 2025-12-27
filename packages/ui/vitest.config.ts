@@ -8,6 +8,14 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["./src/test/setup.ts"],
+    coverage: {
+      reporter: ["text", "lcov"],
+      reportsDirectory: "./coverage",
+    },
+    reporters: [
+      "default",
+      ["junit", { outputFile: "test-results/vitest-results.xml" }],
+    ],
   },
   resolve: {
     alias: {
