@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2025-01-27
 
+### Security
+
+- Updated the dependency catalog to pin Next.js and associated ESLint tooling to v15.5.7, which includes the upstream fix for CVE-2025-66478.
+
 ### Added
 
 - Initial release of Turborepo Next.js shadcn Starter
